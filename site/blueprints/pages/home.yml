@@ -1,0 +1,7 @@
+title: Home
+
+sections:
+  news:
+    headline: News
+    type: pages
+    template: news
