@@ -8,19 +8,19 @@ tabs:
     label: Work
     
     sections:
-      pages:
-        headline: News
+      work:
+        headline: Work
         type: pages
         parent: site.find("work")
         layout: list
         info: "{{ page.position }}"
-        template: news
+        template: default
 
   news:
     label: News
 
     sections:
-      pages:
+      news:
         headline: News
         type: pages
         parent: site.find("news")
@@ -32,10 +32,10 @@ tabs:
     label: Creatives
 
     sections:
-      pages:
-        headline: News
+      creatives:
+        headline: Creatives
         type: pages
         parent: site.find("creatives")
         layout: list
         info: "{{ page.position }}"
-        template: news
+        template: default
