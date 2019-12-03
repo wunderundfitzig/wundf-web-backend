@@ -1,0 +1,12 @@
+title: Creative
+
+fields:
+  description:
+    label: Description
+    type: text
+
+  image:
+    label: Image
+    type: files
+    multiple: false
+    template: image

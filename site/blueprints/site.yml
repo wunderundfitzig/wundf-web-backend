@@ -2,6 +2,7 @@ title: Start Panel
 # preset: pages
 unlisted: true
 
+
 tabs:
 
   work:
@@ -14,7 +15,7 @@ tabs:
         parent: site.find("work")
         layout: list
         info: "{{ page.position }}"
-        template: default
+        template: work
 
   news:
     label: News
@@ -36,6 +37,18 @@ tabs:
         headline: Creatives
         type: pages
         parent: site.find("creatives")
+        layout: list
+        info: "{{ page.position }}"
+        template: creatives
+
+  others:
+    label: Other
+
+    sections:
+      others:
+        headline: Other
+        type: pages
+        parent: site.find("pages")
         layout: list
         info: "{{ page.position }}"
         template: default
