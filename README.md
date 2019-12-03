@@ -3,19 +3,11 @@
 Kirby is a file-based CMS.
 Easy to setup. Easy to use. Flexible as hell.
 
-## Trial
+## Run
 
-You can try Kirby on your local machine or on a test
-server as long as you need to make sure it is the right
-tool for your next project.
-
-## Buy a license
-
-You can purchase your Kirby license at
-<https://getkirby.com/buy>
-
-A Kirby license is valid for a single domain. You can find
-Kirby's license agreement here: <https://getkirby.com/license>
+```
+php -S localhost:8000 kirby/router.php
+```
 
 ## The Plainkit
 

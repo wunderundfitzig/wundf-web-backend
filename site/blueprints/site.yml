@@ -1,3 +1,41 @@
-title: Site
-preset: pages
+title: Start Panel
+# preset: pages
 unlisted: true
+
+tabs:
+
+  work:
+    label: Work
+    
+    sections:
+      pages:
+        headline: News
+        type: pages
+        parent: site.find("work")
+        layout: list
+        info: "{{ page.position }}"
+        template: news
+
+  news:
+    label: News
+
+    sections:
+      pages:
+        headline: News
+        type: pages
+        parent: site.find("news")
+        layout: list
+        info: "{{ page.position }}"
+        template: news
+
+  creatives:
+    label: Creatives
+
+    sections:
+      pages:
+        headline: News
+        type: pages
+        parent: site.find("creatives")
+        layout: list
+        info: "{{ page.position }}"
+        template: news
