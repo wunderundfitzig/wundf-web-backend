@@ -3,11 +3,13 @@ description: Benutzer der nur Lesebrechtigungen für Seiteninhalte hat
 permissions:
   access:
     panel: true
-    site: true
+    site: false
     settings: false
     users: false
   files: false
   site: false
-  pages: false
+  pages:
+    *: false
+    read: true
   user: false
   users: false
