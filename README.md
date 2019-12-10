@@ -3,10 +3,10 @@
 Kirby is a file-based CMS.
 Easy to setup. Easy to use. Flexible as hell.
 
-## Run
+## Run (in development)
 
 ```
-php -S localhost:8000 kirby/router.php
+php -S localhost:8080 kirby/router.php
 ```
 
 ## The Plainkit
