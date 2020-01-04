@@ -7,10 +7,11 @@ $json = [];
 
 foreach($data as $article) {
   $json[] = array(
-    'url'   => (string)$article->url(),
+    'url' => (string)$article->url(),
+    'slug' => (string)$article->slug(),
     'title' => (string)$article->title(),
     'description' => (string)$article->description(),
-    'link_text' => (string)$article->link_text(),
+    'linkText' => (string)$article->link_text(),
     'image' => $article->image()->url(),
   );
 }

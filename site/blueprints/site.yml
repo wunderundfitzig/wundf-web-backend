@@ -2,6 +2,38 @@ title: Start Panel
 # preset: pages
 unlisted: true
 
+columns:
+  # main
+  main:
+    width: 2/3
+    sections:
+
+      # a simple form
+      content:
+        type: fields
+        fields:
+          phone_number:
+            label: Telefonnummer
+            type: tel
+          mail:
+            label: E-Mail
+            type: email
+          address:
+            label: Adresse
+            type: text
+          address_url:
+            label: Link zu Karte
+            type: url
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+
+      # a list of subpages
+      pages:
+        type: pages
+        headline: Seiten
 
 tabs:
 
@@ -12,43 +44,3 @@ tabs:
       work:
         headline: Work
         type: pages
-        parent: site.find("work")
-        layout: list
-        info: "{{ page.position }}"
-        template: work
-
-  news:
-    label: News
-
-    sections:
-      news:
-        headline: News
-        type: pages
-        parent: site.find("news")
-        layout: list
-        info: "{{ page.position }}"
-        template: news
-
-  creatives:
-    label: Creatives
-
-    sections:
-      creatives:
-        headline: Creatives
-        type: pages
-        parent: site.find("creatives")
-        layout: list
-        info: "{{ page.position }}"
-        template: creatives
-
-  others:
-    label: Other
-
-    sections:
-      others:
-        headline: Other
-        type: pages
-        parent: site.find("pages")
-        layout: list
-        info: "{{ page.position }}"
-        template: default
