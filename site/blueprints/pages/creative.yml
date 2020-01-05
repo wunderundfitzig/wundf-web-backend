@@ -1,9 +1,9 @@
 title: Creative
 
 fields:
-  description:
-    label: Description
-    type: text
+  markdown_text:
+    label: Text
+    type: textarea
 
   image:
     label: Image
