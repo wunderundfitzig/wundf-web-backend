@@ -1,0 +1,6 @@
+title: Textseite
+
+fields:
+  markdown_content:
+    label: Inhalt
+    type: textarea

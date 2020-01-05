@@ -1,0 +1,35 @@
+Title: privacy
+
+----
+
+Markdown-content:
+
+# Datenschutz
+
+
+## Nutzung der Website
+
+Ganz einfach: Wenn du unsere Webseite benutzt speichern wir gar nichts. Wir geben auch keine Daten an facebook oder Andere weiter. Wir werden nie erfahren, dass du hier warst.
+
+Auch unser Hostinganbieter [(uberspace)](https://uberspace.de/) speichert deine [IP-Adresse](https://de.wikipedia.org/wiki/IP-Adresse) nicht. 
+
+## Kontaktaufnahme
+
+Wenn du uns eine E-Mail schreibst kennen wir und unser Mail-Anbieter [(uberspace)](https://uberspace.de/) danach deine E-Mail Adresse und den Inhalt der Mail.
+
+Wir verwenden diese nur um dir E-Mails zu schreiben. Mit uberspace haben wir einen [Vertrag zur Auftragsverarbeitung](https://uberspace.de/dpa) und alle Daten werden ausschließlich von uns und uberspace verarbeitet und an sonst niemanden weitergegeben.
+
+# Impressum
+
+wunder & fitzig Reich, Springmann GBR  
+Lausitzer Straße 47  
+10999 Berlin
+
++49 (0) 30 91 523 845  
+info@wunderundfitzig.de
+
+**USt.-IdNr:** DE317155269
+
+### Vertretungsberechtigt:  
+Manuel Reich  
+Martina Springmann
