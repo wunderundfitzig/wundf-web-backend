@@ -10,3 +10,16 @@ fields:
     type: files
     multiple: false
     template: image
+
+  text_content:
+    label: Inhalt
+    type: builder
+    columns: 1
+
+    fieldsets:
+      hmm:
+        name: Text
+        fields:
+          texttt:
+            label: Text
+            type: textarea
