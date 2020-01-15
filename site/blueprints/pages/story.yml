@@ -1,9 +1,8 @@
 title: Story
+preset: page
+pages: false
 
 fields:
-  description:
-    label: Description
-    type: text
 
   image:
     label: Image
@@ -11,15 +10,37 @@ fields:
     multiple: false
     template: image
 
-  text_content:
-    label: Inhalt
+  description:
+    label: Description
+    buttons: false
+    type: textarea
+
+  content:
+    label: Content
     type: builder
     columns: 1
 
     fieldsets:
-      hmm:
+      heading:
+        name: Heading
+        label: "Heading: <b>{{heading}}</b>"
+        fields:
+          heading:
+            label: Text
+            type: text
+
+      text:
         name: Text
         fields:
-          texttt:
+          text:
             label: Text
             type: textarea
+      
+      image:
+        name: Image
+        fields:
+          image:
+            label: Image
+            type: files
+            multiple: false
+            template: image

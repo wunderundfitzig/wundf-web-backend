@@ -1,6 +1,8 @@
 title: Textseite
+preset: page
+pages: false
 
 fields:
   markdown_content:
-    label: Inhalt
+    label: Content
     type: textarea
