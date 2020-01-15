@@ -21,7 +21,7 @@ foreach($page->builder_content()->toBuilderBlocks() as $block):
     case "image":
       $content[] = array(
         'type' => $block->_key()->value(),
-        'image' => $block->image()->toFile()->url()
+        'image' => $block->single_image()->exists() ? $block->single_image()->toFile()->url() : '',
       );
     break;
   }
@@ -30,7 +30,7 @@ endforeach;
 
 $json = array(
   'title' => (string)$page->title(),
-  'image' => (string)$page->image()->url(),
+  'image' => $article->top_image()->exists() ? $article->top_image()->url() : '',
   'teaserText' => (string)$page->teaser_text(),
   'content' => $content
 );

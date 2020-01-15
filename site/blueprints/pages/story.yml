@@ -9,7 +9,7 @@ fields:
     type: users
     multiple: false
 
-  image:
+  top_image:
     label: Image
     type: files
     multiple: false

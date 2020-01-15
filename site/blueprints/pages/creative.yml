@@ -7,7 +7,7 @@ fields:
     label: Text
     type: textarea
 
-  image:
+  person_image:
     label: Image
     type: files
     multiple: false

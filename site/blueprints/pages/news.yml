@@ -12,7 +12,11 @@ fields:
     label: Link Text
     type: text
 
-  image:
+  link_url:
+    label: Link URL
+    type: url
+
+  news_image:
     label: Image
     type: files
     multiple: false

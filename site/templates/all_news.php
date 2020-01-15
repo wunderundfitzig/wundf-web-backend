@@ -12,7 +12,8 @@ foreach($data as $article) {
     'title' => (string)$article->title(),
     'description' => (string)$article->description(),
     'linkText' => (string)$article->link_text(),
-    'image' => $article->image()->url(),
+    'linkURL' => (string)$article->link_url(),
+    'image' => $article->news_image()->exists() ? $article->news_image()->url() : '',
   );
 }
 
