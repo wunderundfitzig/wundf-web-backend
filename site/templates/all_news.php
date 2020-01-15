@@ -12,7 +12,7 @@ foreach($data as $article) {
     'description' => (string)$article->description(),
     'linkText' => (string)$article->link_text(),
     'linkURL' => (string)$article->link_url(),
-    'image' => $article->news_image()->exists() ? $article->news_image()->url() : '',
+    'image' => getImageURL($article->news_image())
   );
 }
 

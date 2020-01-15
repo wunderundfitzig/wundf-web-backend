@@ -4,24 +4,24 @@ $kirby->response()->json();
 
 $content = [];
 foreach($page->builder_content()->toBuilderBlocks() as $block):
-  $type = $block->_key()->value();
+  $type = (string)$block->_key();
   switch ($type) {
     case "text":
       $content[] = array(
-        'type' => $block->_key()->value(),
-        'text' => $block->text()->value()
+        'type' => $type,
+        'text' => (string)$block->text()
       );
     break;
     case "heading":
       $content[] = array(
-        'type' => $block->_key()->value(),
-        'text' => $block->text()->value()
+        'type' => $type,
+        'text' => (string)$block->text()
       );
     break;
     case "image":
       $content[] = array(
-        'type' => $block->_key()->value(),
-        'image' => $block->single_image()->exists() ? $block->single_image()->toFile()->url() : '',
+        'type' => $type,
+        'image' => getImageURL($block->single_image())
       );
     break;
   }
@@ -30,7 +30,7 @@ endforeach;
 
 $json = array(
   'title' => (string)$page->title(),
-  'image' => $page->top_image()->exists() ? $page->top_image()->url() : '',
+  'image' => getImageURL($page->top_image()),
   'teaserText' => (string)$page->teaser_text(),
   'content' => $content
 );
