@@ -6,13 +6,13 @@ $data = $pages->find($id)->children()->published();
 $json = [];
 
 foreach($data as $article) {
+
   $json[] = array(
     'url' => (string)$article->url(),
     'slug' => (string)$article->slug(),
     'title' => (string)$article->title(),
-    'description' => (string)$article->description(),
-    'linkText' => (string)$article->link_text(),
     'image' => $article->image()->url(),
+    'description' => (string)$article->description(),
   );
 }
 

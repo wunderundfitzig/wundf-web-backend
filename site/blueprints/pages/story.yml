@@ -4,6 +4,11 @@ pages: false
 
 fields:
 
+  author:
+    label: Author
+    type: users
+    multiple: false
+
   image:
     label: Image
     type: files
@@ -15,7 +20,7 @@ fields:
     buttons: false
     type: textarea
 
-  content:
+  builder_content:
     label: Content
     type: builder
     columns: 1
