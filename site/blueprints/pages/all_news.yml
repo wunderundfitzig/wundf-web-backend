@@ -1,0 +1,13 @@
+icon: 📰
+options:
+  changeStatus: false
+  changeSlug: false
+  duplicate: false
+  changeTitle: false
+  delete: false
+
+sections:
+  pages:
+    type: pages
+    headline: News
+    template: news

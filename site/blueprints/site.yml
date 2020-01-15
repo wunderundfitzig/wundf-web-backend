@@ -1,12 +1,25 @@
 title: Start Panel
-# preset: pages
 unlisted: true
+update: false
 
 columns:
   # main
   main:
     width: 2/3
     sections:
+
+      main_pages:
+        headline: Main Pages
+        type: pages
+        status: published
+        layout: cards
+        sortable: false
+        image:
+          back: black
+        template:
+          - all_news
+          - all_creatives
+          - work
 
       # a simple form
       content:
@@ -33,14 +46,7 @@ columns:
       # a list of subpages
       pages:
         type: pages
-        headline: Seiten
-
-tabs:
-
-  work:
-    label: Work
-    
-    sections:
-      work:
-        headline: Work
-        type: pages
+        headline: Text Pages
+        template: page
+        image:
+          back: black
