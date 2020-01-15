@@ -31,7 +31,7 @@ endforeach;
 $json = array(
   'title' => (string)$page->title(),
   'image' => (string)$page->image()->url(),
-  'description' => (string)$page->description(),
+  'teaserText' => (string)$page->teaser_text(),
   'content' => $content
 );
 

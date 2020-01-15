@@ -15,10 +15,14 @@ fields:
     multiple: false
     template: image
 
-  description:
-    label: Description
+  teaser_text:
+    label: Teaser Text
     buttons: false
     type: textarea
+
+  link_text:
+    label: Link Text
+    type: text
 
   builder_content:
     label: Content

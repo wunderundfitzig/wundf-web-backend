@@ -12,7 +12,8 @@ foreach($data as $article) {
     'slug' => (string)$article->slug(),
     'title' => (string)$article->title(),
     'image' => $article->image()->url(),
-    'description' => (string)$article->description(),
+    'teaserText' => (string)$article->teaser_text(),
+    'linkText' => (string)$article->link_text()
   );
 }
 
