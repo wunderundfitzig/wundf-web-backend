@@ -11,3 +11,5 @@ sections:
     type: pages
     headline: Stories
     template: story
+    layout: cards
+    size: tiny
