@@ -7,7 +7,6 @@ $json = [];
 
 foreach($data as $article) {
   $json[] = array(
-    'url' => (string)$article->url(),
     'slug' => (string)$article->slug(),
     'title' => (string)$article->title(),
     'description' => (string)$article->description(),
