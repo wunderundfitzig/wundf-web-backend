@@ -30,7 +30,7 @@ endforeach;
 
 $json = array(
   'title' => (string)$page->title(),
-  'image' => $article->top_image()->exists() ? $article->top_image()->url() : '',
+  'image' => $page->top_image()->exists() ? $page->top_image()->url() : '',
   'teaserText' => (string)$page->teaser_text(),
   'content' => $content
 );

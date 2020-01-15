@@ -2,6 +2,10 @@ title: News
 preset: page
 pages: false
 
+options:
+  preview: false
+  changeSlug: false
+
 fields:
   description:
     label: Description

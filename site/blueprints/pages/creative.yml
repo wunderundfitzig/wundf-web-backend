@@ -2,6 +2,10 @@ title: Creative
 preset: page
 pages: false
 
+options:
+  preview: false
+  changeSlug: false
+
 fields:
   markdown_text:
     label: Text
