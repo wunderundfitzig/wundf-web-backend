@@ -7,6 +7,7 @@ fields:
   cover:
     label: Image
     type: files
+    layout: cards
     multiple: false
 
   teaser_text:
