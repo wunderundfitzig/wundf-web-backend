@@ -32,4 +32,7 @@ fields:
       - h3
       - paragraph
       - kirbytext
+      - ul
+      - blockquote
+      - hr
       - image
