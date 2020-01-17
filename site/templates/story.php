@@ -3,25 +3,33 @@
 $kirby->response()->json();
 
 $content = [];
-foreach($page->builder_content()->toBuilderBlocks() as $block):
-  $type = (string)$block->_key();
+foreach($page->main_content()->blocks() as $block):
+  $type = (string)$block->type();
   switch ($type) {
-    case "text":
+    case "kirbytext":
       $content[] = array(
-        'type' => $type,
-        'text' => (string)$block->text()
+        'type' => 'text',
+        'text' => (string)$block->content()
       );
     break;
-    case "heading":
+    case "paragraph":
       $content[] = array(
-        'type' => $type,
-        'text' => (string)$block->text()
+        'type' => 'html',
+        'text' => (string)$block->content()
+      );
+    break;
+    case "h2":
+      $content[] = array(
+        'type' => 'heading',
+        'text' => (string)$block->content()
       );
     break;
     case "image":
       $content[] = array(
         'type' => $type,
-        'image' => getImageURL($block->single_image())
+        'url' => (string)$block->attrs()->src(),
+        'caption' => (string)$block->attrs()->caption(),
+        'alt' => (string)$block->attrs()->alt()
       );
     break;
   }
