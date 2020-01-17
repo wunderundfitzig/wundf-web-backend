@@ -24,32 +24,7 @@ fields:
     label: Link Text
     type: text
 
-  builder_content:
+  main_content:
     label: Content
-    type: builder
+    type: editor
     columns: 1
-
-    fieldsets:
-      heading:
-        name: Heading
-        label: "Heading: <b>{{heading}}</b>"
-        fields:
-          heading:
-            label: Text
-            type: text
-
-      text:
-        name: Text
-        fields:
-          text:
-            label: Text
-            type: textarea
-      
-      image:
-        name: Image
-        fields:
-          image:
-            label: Image
-            type: files
-            multiple: false
-            template: image
