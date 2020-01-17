@@ -4,16 +4,10 @@ pages: false
 
 fields:
 
-  author:
-    label: Author
-    type: users
-    multiple: false
-
-  top_image:
+  cover:
     label: Image
     type: files
     multiple: false
-    template: image
 
   teaser_text:
     label: Teaser Text
@@ -23,6 +17,11 @@ fields:
   link_text:
     label: Link Text
     type: text
+
+  author:
+    label: Author
+    type: users
+    multiple: false
 
   main_content:
     label: Content

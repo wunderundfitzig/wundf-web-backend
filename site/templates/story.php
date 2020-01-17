@@ -59,7 +59,7 @@ endforeach;
 
 $json = array(
   'title' => (string)$page->title(),
-  'image' => getImageURL($page->top_image()),
+  'image' => getImageURL($page->cover()),
   'teaserText' => (string)$page->teaser_text(),
   'content' => $content
 );

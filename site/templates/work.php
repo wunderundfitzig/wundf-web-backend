@@ -11,7 +11,7 @@ foreach($data as $article) {
     'url' => (string)$article->url(),
     'slug' => (string)$article->slug(),
     'title' => (string)$article->title(),
-    'image' => getImageURL($article->top_image()),
+    'image' => getImageURL($article->cover()),
     'teaserText' => (string)$article->teaser_text(),
     'linkText' => (string)$article->link_text()
   );

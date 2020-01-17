@@ -11,5 +11,6 @@ sections:
     type: pages
     headline: Stories
     template: story
+    image: page.cover.toFile
     layout: cards
     size: tiny
