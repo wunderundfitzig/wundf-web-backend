@@ -7,10 +7,27 @@ options:
   delete: false
 
 sections:
-  pages:
+  drafts:
     type: pages
-    headline: Stories
+    headline: Drafts
+    template: story
+    image: page.cover.toFile
+    layout: list
+    status: draft
+
+  listed:
+    type: pages
+    headline: Listed
     template: story
     image: page.cover.toFile
     layout: cards
     size: tiny
+    status: listed
+
+  unlisted:
+    type: pages
+    headline: Unlisted
+    template: story
+    image: page.cover.toFile
+    layout: list
+    status: unlisted
