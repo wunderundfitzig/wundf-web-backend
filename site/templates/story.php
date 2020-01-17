@@ -21,6 +21,14 @@ foreach($page->main_content()->blocks() as $block):
     case "h2":
       $content[] = array(
         'type' => 'heading',
+        'level' => 2,
+        'text' => (string)$block->content()
+      );
+    break;
+    case "h3":
+      $content[] = array(
+        'type' => 'heading',
+        'level' => 3,
         'text' => (string)$block->content()
       );
     break;
