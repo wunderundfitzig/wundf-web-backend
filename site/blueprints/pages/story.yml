@@ -27,4 +27,3 @@ fields:
   main_content:
     label: Content
     type: editor
-    columns: 1
