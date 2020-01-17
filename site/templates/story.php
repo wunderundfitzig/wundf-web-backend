@@ -9,8 +9,8 @@ foreach($page->main_content()->blocks() as $block):
   switch ($type) {
     case "kirbytext":
       $content[] = array(
-        'type' => 'text',
-        'text' => (string)$block->content()
+        'type' => 'markdown',
+        'markdown' => (string)$block->content()
       );
     break;
     case "h2":
