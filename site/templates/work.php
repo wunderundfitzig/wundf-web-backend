@@ -8,14 +8,14 @@ $data = $request->query()->get('filter') === 'all'
 
 $stories = [];
 
-foreach($data as $article) {
+foreach($data as $story) {
   $stories[] = array(
-    'url' => (string)$article->url(),
-    'slug' => (string)$article->slug(),
-    'title' => (string)$article->title(),
-    'image' => getImageURL($article->cover()),
-    'teaserText' => (string)$article->teaser_text(),
-    'linkText' => (string)$article->link_text()
+    'url' => (string)$story->url(),
+    'slug' => (string)$story->slug(),
+    'title' => (string)$story->title(),
+    'image' => getImageURL($story->cover()),
+    'teaserText' => (string)$story->teaser_text(),
+    'linkText' => (string)$story->link_text()
   );
 }
 

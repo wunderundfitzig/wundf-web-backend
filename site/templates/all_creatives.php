@@ -1,15 +1,14 @@
 <?php
 
 $kirby->response()->json();
-$id = $page->id();
-$data = $pages->find($id)->children()->published();
+$children = $page->children()->published();
 $json = [];
 
-foreach($data as $article) {
+foreach($children as $creative) {
   $json[] = array(
-    'title' => (string)$article->title(),
-    'text' => (string)$article->markdown_text(),
-    'image' => getImageURL($article->person_image())
+    'title' => (string)$creative->title(),
+    'text' => (string)$creative->markdown_text(),
+    'image' => getImageURL($creative->person_image())
   );
 }
 
