@@ -3,11 +3,9 @@ unlisted: true
 update: false
 
 columns:
-  # main
   main:
     width: 2/3
     sections:
-
       main_pages:
         headline: Main Pages
         type: pages
@@ -21,10 +19,14 @@ columns:
           - all_creatives
           - work
 
-      # a simple form
       content:
+        headline: Metadata
         type: fields
         fields:
+          page_settings:
+            label: Page Settings
+            type: headline
+            numbered: false
           phone_number:
             label: Telefonnummer
             type: tel
@@ -38,11 +40,38 @@ columns:
             label: Link zu Karte
             type: url
 
+      webhooks:
+        type: fields
+        fields:
+          webhooks:
+            label: Webhooks
+            type: headline
+            numbered: false
+          hooks:
+            label: Webhooks
+            type: structure
+            fields:
+              name:
+                label: name
+                type: text
+              url:
+                label: URL
+                type: url
+              payload:
+                label: Payload
+                type: json
+                mutate: true
+                keys: true
+              triggers:
+                label: Triggers
+                type: tags
+                accept: all
+                options: [hey]
+
   # sidebar
   sidebar:
     width: 1/3
     sections:
-
       # a list of subpages
       pages:
         type: pages
