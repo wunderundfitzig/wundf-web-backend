@@ -47,7 +47,7 @@ columns:
             label: Webhooks
             type: headline
             numbered: false
-          hooks:
+          webhooks:
             label: Webhooks
             type: structure
             fields:
