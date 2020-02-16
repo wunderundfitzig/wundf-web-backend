@@ -7,3 +7,6 @@
 [submodule "site/plugins/kirby-json"]
 	path = site/plugins/kirby-json
 	url = git@github.com:OblikStudio/kirby-json.git
+[submodule "site/plugins/webhooks"]
+	path = site/plugins/webhooks
+	url = git@github.com:errnesto/kirby-plugin-webhooks.git
