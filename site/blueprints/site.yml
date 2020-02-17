@@ -50,6 +50,9 @@ columns:
           webhooks:
             label: Webhooks
             type: structure
+            columns:
+              name: 1/3
+              url: 2/3
             fields:
               name:
                 label: name
