@@ -60,16 +60,17 @@ columns:
               url:
                 label: URL
                 type: url
-              payload:
-                label: Payload
-                type: json
-                mutate: true
-                keys: true
+              username:
+                label: Username
+                type: text
+              password:
+                label: Password
+                type: text
               triggers:
                 label: Triggers
                 type: tags
                 accept: all
-                options: [hey]
+                options: []
 
   # sidebar
   sidebar:
